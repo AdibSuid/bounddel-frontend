@@ -1,23 +1,17 @@
 # Documentation
 
-## Backend Setup
+## Quick Start
 
-1. Install Python dependencies:
-   ```bash
-   cd backend
-   pip install -r requirements.txt
-   ```
+Run the entire system with:
+```bash
+./start.sh
+```
 
-2. Set up Delineate-Anything:
-   - Add to PYTHONPATH: `export PYTHONPATH=/path/to/Delineate-Anything:$PYTHONPATH`
-   - Or install editable: `pip install -e /path/to/Delineate-Anything`
-
-3. Run the FastAPI server:
-   ```bash
-   cd backend
-   PYTHONPATH=/path/to/Delineate-Anything python main.py
-   # Or uvicorn main:app --host 0.0.0.0 --port 8000
-   ```
+Or manually:
+```bash
+npm run install:all
+npm run dev
+```
 
 ## API Documentation
 

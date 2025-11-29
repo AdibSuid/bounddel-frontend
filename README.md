@@ -45,18 +45,31 @@ boundary-delineation-app/
    - For Sentinel Hub: Set `SH_CLIENT_ID` and `SH_CLIENT_SECRET`
    - For Delineate-Anything: Ensure PYTHONPATH includes the repo path
 
-### Development
+### Quick Start (One Command)
 
-Run both frontend and backend:
+Run the entire system with one command:
+
 ```bash
-npm run dev
+./start.sh
 ```
 
-Or run separately:
-```bash
-npm run dev:frontend  # Next.js on http://localhost:3000
-npm run dev:backend   # FastAPI on http://localhost:8000
-```
+This will install all dependencies and start both frontend and backend.
+
+### Manual Start
+
+If you prefer manual control:
+
+1. Install dependencies:
+   ```bash
+   npm run install:all
+   ```
+
+2. Run the application:
+   ```bash
+   npm run dev
+   ```
+
+The frontend will be available at [http://localhost:3000](http://localhost:3000) and the backend at [http://localhost:8000](http://localhost:8000).
 
 ### Building
 
